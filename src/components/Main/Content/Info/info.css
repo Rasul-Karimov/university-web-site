@@ -1,0 +1,113 @@
+.information {
+  margin: 30px 0 0 0;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .information {
+    padding-top: calc( 40px + 215.9 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .information {
+    padding-top: calc(40px + 127 * (100vw / 1355));
+  }
+}
+
+@media (max-width: 767px) {
+  .information {
+    padding-bottom: calc( 40px + 275.4 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .information {
+    padding-bottom: calc(40px + 162 * (100vw / 1355));
+  }
+}
+
+.information__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.information .back {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.information__items {
+  position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+  .information__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.information__title {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 26px;
+}
+
+.information__subtitle {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 80px;
+}
+
+.information__items {
+  margin-bottom: 70px;
+}
+
+.items-info__title {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #636161;
+  margin-bottom: 15px;
+}
+
+.items-info__text {
+  font-size: 24px;
+  line-height: 28px;
+  color: #636161;
+  font-weight: 700;
+  position: relative;
+}
+
+.items-info__text::before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #636161;
+}

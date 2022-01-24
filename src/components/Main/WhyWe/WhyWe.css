@@ -1,0 +1,249 @@
+.whyWe {
+  position: relative;
+}
+
+.whyWe__title {
+  position: relative;
+  z-index: 10;
+  padding: 20px 0 0 0;
+}
+
+.whyWe__fon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+}
+
+.whyWe__items {
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 767px) {
+  .whyWe__items {
+    padding-top: calc( 50px + 255 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .whyWe__items {
+    padding-top: calc(50px + 150 * (100vw / 1355));
+  }
+}
+
+.whyWe__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 50px;
+}
+
+@media (max-width: 1100px) {
+  .whyWe__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .whyWe__item {
+    margin-bottom: calc( 50px + 170 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .whyWe__item {
+    margin-bottom: calc(50px + 100 * (100vw / 1355));
+  }
+}
+
+.whyWe__background img {
+  width: 100%;
+}
+
+.item-whywe2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.item-whyWe__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+@media (max-width: 1100px) {
+  .item-whyWe__content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.item-whyWe__content li {
+  font-weight: 500;
+  line-height: 150%;
+  position: relative;
+  padding-left: 50px;
+}
+
+@media (max-width: 767px) {
+  .item-whyWe__content li {
+    font-size: calc( 18px + 30.6 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .item-whyWe__content li {
+    font-size: calc(18px + 18 * (100vw / 1355));
+  }
+}
+
+.item-whyWe__content li:not(:last-child) {
+  margin-bottom: 66px;
+}
+
+.item-whyWe__content li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #d3eafc;
+}
+
+.item-whyWe__content li span {
+  font-weight: 500;
+  line-height: 150%;
+  color: #0054a5;
+}
+
+@media (max-width: 767px) {
+  .item-whyWe__content li span {
+    font-size: calc( 18px + 30.6 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .item-whyWe__content li span {
+    font-size: calc(18px + 18 * (100vw / 1355));
+  }
+}
+
+.item-whyWe__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.item-whyWe__img img {
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .item-whyWe__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .questions-whyWe__title {
+    margin-bottom: calc( 50px + 170 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .questions-whyWe__title {
+    margin-bottom: calc(50px + 100 * (100vw / 1355));
+  }
+}
+
+@media (max-width: 767px) {
+  .questions-whyWe {
+    margin-bottom: calc( 50px + 255 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .questions-whyWe {
+    margin-bottom: calc(50px + 150 * (100vw / 1355));
+  }
+}
+
+.questions-whyWe__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 50px;
+}
+
+@media (max-width: 1100px) {
+  .questions-whyWe__blocks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.questions-whyWe__block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+@media (max-width: 1100px) {
+  .questions-whyWe__block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.questions-whyWe__block > p {
+  margin-bottom: 30px;
+}
+
+.questions-whyWe__question {
+  line-height: 35px;
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .questions-whyWe__question {
+    font-size: calc( 16px + 23.8 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .questions-whyWe__question {
+    font-size: calc(16px + 14 * (100vw / 1355));
+  }
+}
+
+.questions-whyWe__answer {
+  line-height: 135%;
+  color: #0054a5;
+}
+
+@media (max-width: 767px) {
+  .questions-whyWe__answer {
+    font-size: calc( 14px + 17 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .questions-whyWe__answer {
+    font-size: calc(14px + 10 * (100vw / 1355));
+  }
+}

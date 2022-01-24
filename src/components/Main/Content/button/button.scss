@@ -1,0 +1,26 @@
+.button {
+  background: #0054a5;
+  border: 2px solid #0054a5;
+  box-sizing: border-box;
+  border-radius: 39px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+  width: 251px;
+  height: 57.92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all ease 300ms 0s;
+  &:hover {
+    background-color: #00305e;
+  }
+  img {
+    position: absolute;
+    top: 18px;
+    left: 170px;
+    padding-left: 10px;
+  }
+}

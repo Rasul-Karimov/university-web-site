@@ -1,0 +1,108 @@
+.item-specialties {
+  background: #eaf3fa;
+  padding: 20px 65px;
+  max-width: 422px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-specialties__title {
+  margin-bottom: 20px;
+}
+
+.item-specialties__list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+@media (max-width: 767px) {
+  .item-specialties__list {
+    margin-bottom: calc( 20px + 68 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .item-specialties__list {
+    margin-bottom: calc(20px + 40 * (100vw / 1355));
+  }
+}
+
+.item-specialties__item {
+  position: relative;
+  padding-left: 35px;
+}
+
+.item-specialties__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.item-specialties__item::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #0054a5;
+  -webkit-transition: all ease 300ms 0s;
+  transition: all ease 300ms 0s;
+}
+
+.item-specialties__item:hover::before {
+  background-color: #0054a5;
+}
+
+.item-specialties__item:hover .item-specialties__link {
+  color: #0054a5;
+}
+
+.item-specialties__link {
+  color: inherit;
+  font-weight: bold;
+  line-height: 21px;
+  color: #cecece;
+}
+
+.item-specialties__button-link {
+  width: 192px;
+  height: 44.31px;
+  background: #0054a5;
+  border: 1.52988px solid #0054a5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 29.8327px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 5px 3px 15px #0054a5;
+          box-shadow: 5px 3px 15px #0054a5;
+  color: white;
+  font-size: 10.7092px;
+  line-height: 17px;
+  padding-left: 30px;
+  padding-right: 20px;
+  -webkit-transition: all ease 300ms 0s;
+  transition: all ease 300ms 0s;
+}
+
+.item-specialties__button-link:hover {
+  background: #002950;
+}

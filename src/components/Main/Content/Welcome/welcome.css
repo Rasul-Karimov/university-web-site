@@ -1,0 +1,131 @@
+@media (max-width: 767px) {
+  .welcome {
+    padding-top: calc( 30px + 119 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .welcome {
+    padding-top: calc(30px + 70 * (100vw / 1355));
+  }
+}
+
+.welcome__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1050px) {
+  .welcome__block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.welcome__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 35%;
+          flex: 1 1 35%;
+}
+
+.welcome__title {
+  font-size: 32px;
+  line-height: 38px;
+  color: #0054a5;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.welcome__text {
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .welcome__text {
+    margin-bottom: calc( 20px + 59.5 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .welcome__text {
+    margin-bottom: calc(20px + 35 * (100vw / 1355));
+  }
+}
+
+.welcome__button {
+  background: #0054a5;
+  border: 2px solid #0054a5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 39px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+  width: 251px;
+  height: 57.92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.welcome__button img {
+  padding-left: 10px;
+}
+
+.welcome__img img {
+  width: 100%;
+}
+
+.button {
+  background: #0054a5;
+  border: 2px solid #0054a5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 39px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+  width: 251px;
+  height: 57.92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: all ease 300ms 0s;
+  transition: all ease 300ms 0s;
+}
+
+.button:hover {
+  background-color: #00305e;
+}
+
+.button img {
+  position: absolute;
+  top: 18px;
+  left: 170px;
+  padding-left: 10px;
+}

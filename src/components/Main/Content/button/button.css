@@ -1,0 +1,36 @@
+.button {
+  background: #0054a5;
+  border: 2px solid #0054a5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 39px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+  width: 251px;
+  height: 57.92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: all ease 300ms 0s;
+  transition: all ease 300ms 0s;
+}
+
+.button:hover {
+  background-color: #00305e;
+}
+
+.button img {
+  position: absolute;
+  top: 18px;
+  left: 170px;
+  padding-left: 10px;
+}

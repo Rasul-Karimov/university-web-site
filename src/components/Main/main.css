@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+  .title {
+    font-size: calc( 22px + 17 * ((100vw - 320px) / 1355));
+  }
+}
+
+@media (min-width: 767px) {
+  .title {
+    font-size: calc(22px + 10 * (100vw / 1355));
+  }
+}
