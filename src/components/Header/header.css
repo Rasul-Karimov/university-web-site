@@ -107,6 +107,7 @@
 }
 
 .menu__sublist {
+  display: none;
   position: relative;
   z-index: 20;
 }
