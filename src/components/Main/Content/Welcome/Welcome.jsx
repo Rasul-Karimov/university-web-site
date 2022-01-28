@@ -1,6 +1,8 @@
 import "./welcome.css";
 import mainImg from "../../../../img/main.png";
 import arrow from "../../../../img/arrow.png";
+import practice from "../../../../img/practice.jpg";
+
 import Button from "../button/Button";
 
 const Welcome = () => {

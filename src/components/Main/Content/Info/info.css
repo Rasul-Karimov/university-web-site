@@ -8,25 +8,25 @@
 
 @media (max-width: 767px) {
   .information {
-    padding-top: calc( 40px + 215.9 * ((100vw - 320px) / 1355));
+    padding-top: calc( 40px + 215.9 * ((100vw - 320px) / 1620));
   }
 }
 
 @media (min-width: 767px) {
   .information {
-    padding-top: calc(40px + 127 * (100vw / 1355));
+    padding-top: calc(40px + 127 * (100vw / 1620));
   }
 }
 
 @media (max-width: 767px) {
   .information {
-    padding-bottom: calc( 40px + 275.4 * ((100vw - 320px) / 1355));
+    padding-bottom: calc( 40px + 275.4 * ((100vw - 320px) / 1620));
   }
 }
 
 @media (min-width: 767px) {
   .information {
-    padding-bottom: calc(40px + 162 * (100vw / 1355));
+    padding-bottom: calc(40px + 162 * (100vw / 1620));
   }
 }
 

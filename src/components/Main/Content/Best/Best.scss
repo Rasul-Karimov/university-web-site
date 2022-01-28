@@ -1,4 +1,4 @@
-$maxWidth: 1355;
+$maxWidth: 1620;
 @mixin adaptiv-value($value, $pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
@@ -42,8 +42,8 @@ $maxWidth: 1355;
     }
   }
   &__img {
-    width: 285px;
-    height: 285px;
+    width: 245px;
+    height: 245px;
     border-radius: 50%;
     overflow: hidden;
     img {
@@ -52,6 +52,7 @@ $maxWidth: 1355;
     }
   }
   & .title {
+    @include adaptiv-value("font-size", 25, 14);
     margin-top: 20px;
   }
 }

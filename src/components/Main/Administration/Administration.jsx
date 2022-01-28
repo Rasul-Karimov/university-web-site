@@ -5,6 +5,7 @@ import teacher1 from "../../../img/teacher1.png";
 import teacher2 from "../../../img/teacher2.png";
 import teacher3 from "../../../img/teacher3.png";
 import fon from "../../../img/Departfon.png";
+import Admin from "./Admin/Admin";
 
 const Administration = () => {
   return (
@@ -14,87 +15,38 @@ const Administration = () => {
 
       <div className="administration__container container">
         <div className="administration__items">
-          <div className="administration__item item-administration item-administration1">
-            <div className="item-administration__content">
-              <div className="item-administration__name">
-                <span>Директор </span>
-                <p>Джакшылыкова Гулкайыр Джакшылыковна</p>
-              </div>
-              <div className="item-administration__text">
-                <h3>Уважаемые родители! Дорогие абитуриенты!</h3>
-                <p>
-                  Путь к професси ональной карьере начинается с выбора высшего
-                  учебного заведения. Этот выбор непростой и очень
-                  ответственный, поскольку он определяет направление дальнейшего
-                  жизненного пути. Приглашаю Вас в Высшую IT- школу
-                </p>
-              </div>
-            </div>
-            <div className="item-administration__img">
-              <img src={director} alt="" />
-            </div>
-          </div>
-          <div className="administration__item item-administration item-administration2">
-            <div className="item-administration__content">
-              <div className="item-administration__name">
-                <span>Заместитель директора </span>
-                <p>Боталиева Каныкей Мирбековна</p>
-              </div>
-              <div className="item-administration__text">
-                <p>
-                  Преподавание знакомит меня с миром разных наций, культур и
-                  самых разнообразных личностей. Это расширило мое
-                  социологическое понимание за счет изучения собственного опыта
-                  моих учеников. Я часто задаюсь вопросом, почему мои коллеги
-                  любят эту профессию так же сильно, как и я, поэтому этот блог
-                  является свидетельством их мыслей и чувств.
-                </p>
-              </div>
-            </div>
-            <div className="item-administration__img">
-              <img src={teacher1} alt="" />
-            </div>
-          </div>
+          <Admin
+            who="Директор"
+            name="Джакшылыкова Гулкайыр Джакшылыковна"
+            title="Уважаемые родители! Дорогие абитуриенты!"
+            text="Уважаемые родители! Дорогие абитуриенты! 
 
-          <div className="administration__item item-administration item-administration3">
-            <div className="item-administration__content">
-              <div className="item-administration__name">
-                <span>Ведущий специалист</span>
-                <p>Омуркулова Саламат Омуркуловна</p>
-              </div>
-              <div className="item-administration__text">
-                <p>
-                  Я люблю преподавать, потому что каждый день мы меняем чью-то
-                  жизнь, что выходит далеко за рамки знаний. Мы вдохновляем,
-                  поддерживаем, наставляем и получаем возможность открывать и
-                  делиться некоторыми из лучших сторон себя как людей ».
-                </p>
-              </div>
-            </div>
-            <div className="item-administration__img">
-              <img src={teacher2} alt="" />
-            </div>
-          </div>
-          <div className="administration__item item-administration item-administration4">
-            <div className="item-administration__content">
-              <div className="item-administration__name">
-                <span>Ведущий специалист IT- Колледжа</span>
-                <p>Джакшылыкова Гулкайыр Джакшылыковна</p>
-              </div>
-              <div className="item-administration__text">
-                <h3>Уважаемые родители! Дорогие абитуриенты!</h3>
-                <p>
-                  Путь к професси ональной карьере начинается с выбора высшего
-                  учебного заведения. Этот выбор непростой и очень
-                  ответственный, поскольку он определяет направление дальнейшего
-                  жизненного пути. Приглашаю Вас в Высшую IT- школу
-                </p>
-              </div>
-            </div>
-            <div className="item-administration__img">
-              <img src={teacher3} alt="" />
-            </div>
-          </div>
+   Путь к професси ональной карьере начинается с выбора высшего учебного заведения.
+Этот выбор непростой и очень ответственный, поскольку он определяет направление дальнейшего жизненного пути. Приглашаю Вас в Высшую IT- школу/ Приветствую Вас на официальном сайте Кыргызского национального аграрного университета имени К.И.Скрябина.
+
+Я искренне рад, что вы проявляете интерес к нашему университету и предлагаю воспользоваться увлекательной и интересной возможностью, которую представляет Вашему вниманию наш сайт.
+
+У Вас появится уникальная возможность быть вовлеченными и стать активными участниками образовательных, научно-исследовательских, международных и культурных событий, происходящих в единственном аграрном ВУЗе Кыргызстана, который является учебно-научно-производственным центром.
+
+Посещая наш сайт, вы можете извлечь информацию об истории университета, структуре, достижениях факультетов, научно-исследовательских институтов и колледжей в сфере образования, науки и производства.
+"
+            image={director}
+          />
+          <Admin
+            who="Заместитель директора"
+            name="Боталиева Каныкей Мирбековна"
+            image={teacher1}
+          />
+          <Admin
+            who="Ведущий специалист"
+            name="Сыргак кызы Айзат"
+            image={teacher2}
+          />
+          <Admin
+            who="Ведущий специалист IT- Колледжа"
+            name="Омуркулова Саламат Омуркуловна"
+            image={teacher3}
+          />
         </div>
       </div>
     </div>

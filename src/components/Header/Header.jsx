@@ -2,6 +2,7 @@ import "./header.css";
 import logo from "./../../img/logo.png";
 import map from "./../../img/map.png";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 function Header() {
   let [burgerMenu, setBurgerMenu] = useState(false);
@@ -21,29 +22,24 @@ function Header() {
           <nav className="header__menu menu">
             <ul className="menu__list">
               <li className="menu__item">
-                <a target="_blank" href="" className="menu__link">
-                  Covid-19
-                </a>
+                <NavLink to="/" className="menu__link">
+                  Главная
+                </NavLink>
               </li>
               <li className="menu__item">
-                <a target="_blank" href="" className="menu__link">
+                <a href="" className="menu__link">
                   О нас
                 </a>
                 <ul className="menu__sublist">
                   <li className="menu__subitem">
-                    <a target="_blank" href="" className="menu__sublink">
-                      История
-                    </a>
-                  </li>
-                  <li className="menu__subitem">
-                    <a href="/administration" className="menu__sublink">
+                    <Link to="/administration" className="menu__sublink">
                       Администрация
-                    </a>
+                    </Link>
                   </li>
                   <li className="menu__subitem">
-                    <a href="/news" className="menu__sublink">
+                    <Link to="/news" className="menu__sublink">
                       Новости
-                    </a>
+                    </Link>
                   </li>
                   <li className="menu__subitem">
                     <a
@@ -56,69 +52,46 @@ function Header() {
                   </li>
                 </ul>
               </li>
-
               <li className="menu__item">
-                <a target="_blank" href="" className="menu__link">
+                <a href="" className="menu__link">
                   Поступающим
                 </a>
                 <ul className="menu__sublist">
                   <li className="menu__subitem">
-                    <a href="/whywe" className="menu__sublink">
+                    <Link to="/whywe" className="menu__sublink">
                       Почему мы?
-                    </a>
+                    </Link>
                   </li>
                   <li className="menu__subitem">
-                    <a target="_blank" href="" className="menu__sublink">
+                    <Link to="/department" className="menu__sublink">
                       Бакалавр
-                    </a>
+                    </Link>
                   </li>
                   <li className="menu__subitem">
-                    <a target="_blank" href="" className="menu__sublink">
+                    <Link to="/collage" className="menu__sublink">
                       Колледж
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="menu__item">
-                <a href="/students" className="menu__link">
+                <NavLink to="/students" className="menu__link">
                   Студентам
-                </a>
+                </NavLink>
               </li>
               <li className="menu__item">
-                <a target="_blank" href="" className="menu__link">
+                <a
+                  target="_blank"
+                  href="http://avn.ksla.kg/"
+                  className="menu__link"
+                >
                   Портал
                 </a>
               </li>
               <li className="menu__item">
-                <a target="_blank" href="" className="menu__link">
+                <NavLink to="/contacts" className="menu__link">
                   Контакты
-                </a>
-                <ul className="menu__sublist">
-                  <li className="menu__subitem">
-                    <a target="_blank" href="" className="menu__sublink">
-                      Адрес
-                    </a>
-                  </li>
-                  <li className="menu__subitem">
-                    <a target="_blank" href="" className="menu__sublink">
-                      Ссылка на соц сети
-                    </a>
-                  </li>
-                  <li className="menu__subitem">
-                    <a target="_blank" href="" className="menu__sublink">
-                      Телеграм группа для род
-                    </a>
-                  </li>
-                  <li className="menu__subitem">
-                    <a
-                      target="_blank"
-                      href="https://2gis.kg/bishkek/firm/70000001040535756?m=74.630391%2C42.854913%2F17.27"
-                      className="menu__sublink"
-                    >
-                      2 гис
-                    </a>
-                  </li>
-                </ul>
+                </NavLink>
               </li>
             </ul>
           </nav>

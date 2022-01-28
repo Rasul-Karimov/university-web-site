@@ -1,4 +1,4 @@
-$maxWidth: 1355;
+$maxWidth: 1620;
 @mixin adaptiv-value($value, $pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
@@ -17,6 +17,12 @@ $maxWidth: 1355;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    @include adaptiv-value("margin-top", 150, 50);
+  }
+  &__item {
+    img {
+      width: 100%;
+    }
   }
   &__info-text {
     @include adaptiv-value("padding-top", 150, 50);
@@ -46,6 +52,7 @@ $maxWidth: 1355;
     flex-wrap: wrap;
     @media (max-width: 1100px) {
       justify-content: center;
+      align-items: center;
     }
   }
 
@@ -90,6 +97,8 @@ $maxWidth: 1355;
   }
   &__img {
     flex: 0 0 40%;
+    max-height: 394px;
+    max-width: 520px;
     img {
       width: 100%;
     }
@@ -103,9 +112,11 @@ $maxWidth: 1355;
   @media (max-width: 1100px) {
     flex: 0 0 100%;
   }
+  &__text {
+    align-self: end;
+  }
   p {
-    @include adaptiv-value("font-size", 30, 14);
-    font-size: 30px;
+    @include adaptiv-value("font-size", 24, 14);
     line-height: 150%;
   }
   img {
@@ -122,20 +133,9 @@ $maxWidth: 1355;
     flex-wrap: wrap;
   }
 }
-
-.item-about-specialties {
-  flex: 0 0 50%;
-  @media (max-width: 1100px) {
-    flex: 0 0 100%;
-  }
-  background: #eaf3fa;
-  padding: 35px 35px 55px 35px;
-  &__title {
-    margin-bottom: 44px;
-  }
-  &__text {
-    @include adaptiv-value("font-size", 20, 16);
-    line-height: 135%;
-    color: #636161;
+.block-about__img {
+  img {
+    max-width: 600px;
+    max-height: 455px;
   }
 }

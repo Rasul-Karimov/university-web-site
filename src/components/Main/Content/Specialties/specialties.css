@@ -8,13 +8,13 @@
 
 @media (max-width: 767px) {
   .specialties__block {
-    margin-top: calc( 20px + 51 * ((100vw - 320px) / 1355));
+    margin-top: calc( 20px + 51 * ((100vw - 320px) / 1620));
   }
 }
 
 @media (min-width: 767px) {
   .specialties__block {
-    margin-top: calc(20px + 30 * (100vw / 1355));
+    margin-top: calc(20px + 30 * (100vw / 1620));
   }
 }
 

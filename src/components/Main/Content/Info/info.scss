@@ -1,4 +1,4 @@
-$maxWidth: 1355;
+$maxWidth: 1620;
 @mixin adaptiv-value($value, $pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;

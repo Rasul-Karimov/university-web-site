@@ -1,4 +1,4 @@
-$maxWidth: 1355;
+$maxWidth: 1620;
 @mixin adaptiv-value($value, $pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
@@ -57,7 +57,7 @@ $maxWidth: 1355;
     }
     li {
       font-weight: 500;
-      @include adaptiv-value("font-size", 36, 18);
+      @include adaptiv-value("font-size", 30, 18);
       line-height: 150%;
       position: relative;
       padding-left: 50px;
@@ -76,7 +76,7 @@ $maxWidth: 1355;
       }
       span {
         font-weight: 500;
-        @include adaptiv-value("font-size", 36, 18);
+        @include adaptiv-value("font-size", 30, 18);
 
         line-height: 150%;
         color: #0054a5;
@@ -85,6 +85,8 @@ $maxWidth: 1355;
   }
   &__img {
     flex: 0 0 50%;
+    max-width: 760px;
+    max-height: 535px;
     img {
       width: 100%;
     }

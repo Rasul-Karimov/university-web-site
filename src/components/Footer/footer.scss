@@ -1,4 +1,4 @@
-$maxWidth: 1355;
+$maxWidth: 1620;
 @mixin adaptiv-value($value, $pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
@@ -26,7 +26,7 @@ $maxWidth: 1355;
   }
   &__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     @media (max-width: 1100px) {
       flex: 0 0 100%;
     }
@@ -66,10 +66,30 @@ $maxWidth: 1355;
     line-height: 22px;
     color: #ffffff;
   }
+  &__messengers {
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #ffffff;
+      @include adaptiv-value("margin-bottom", 52, 30);
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-bottom: 28px;
+      }
+    }
+  }
 }
 .form-footer {
-  width: 363px;
-  height: 289px;
+  margin-bottom: 20px;
+  @include adaptiv-value("padding-top", 20, 15);
+  @include adaptiv-value("padding-right", 40, 25);
+  @include adaptiv-value("padding-left", 40, 25);
+  @include adaptiv-value("padding-bottom", 20, 15);
+
   background: #ffffff;
   border-radius: 41px;
   display: flex;
@@ -81,10 +101,12 @@ $maxWidth: 1355;
     text-align: center;
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 35px;
   }
   &__input-name,
   &__input-tel {
-    width: 253px;
+    margin-bottom: 25px;
+    width: 240px;
     height: 41px;
     background: #0054a5;
     border-radius: 32px;

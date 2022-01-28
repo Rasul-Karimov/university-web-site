@@ -1,0 +1,84 @@
+$maxWidth: 1620;
+@mixin adaptiv-value($value, $pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media (max-width: 767px) {
+    #{$value}: calc(
+      #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
+    );
+  }
+  @media (min-width: 767px) {
+    #{$value}: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
+}
+
+.items-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  @include adaptiv-value("padding-top", 100, 50);
+  @include adaptiv-value("padding-left", 40, 20);
+  @include adaptiv-value("padding-right", 40, 20);
+
+  &__data {
+    height: 53px;
+    width: 47px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  &__month {
+    background-color: #0054a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    line-height: 12px;
+    color: #ffffff;
+  }
+  &__day {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+  }
+  &__title {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0054a5;
+    @include adaptiv-value("margin-bottom", 35, 20);
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 14px;
+    flex: 1 1 auto;
+    a {
+      font-size: 12px;
+      color: #0054a5;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    @include adaptiv-value("padding-bottom", 80, 40);
+  }
+  &__more-btn {
+    display: block;
+    width: 180px;
+    background: #0054a5;
+    box-shadow: 4px 4px 10px #0054a5;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 17px 0;
+    text-align: center;
+    margin-bottom: 36px;
+    color: #ffffff;
+    transition: all ease 300ms 0s;
+    &:hover {
+      background: #023361;
+    }
+  }
+}

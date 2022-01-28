@@ -1,66 +1,50 @@
 import React from "react";
+import NewsItem from "../../NewsItem/NewsItem";
 import "./news.css";
+import { NavLink } from "react-router-dom";
 const News = () => {
   return (
     <div className="news">
       <div className="news__container container">
         <div className="news__title title">Последние Новости & Объявления</div>
         <div className="news__block">
-          <div className="news__items items-news">
-            <div className="items-news__data">
-              <div className="items-news__month">янв</div>
-              <div className="items-news__day">10</div>
-            </div>
-            <div className="items-news__title">Достижения студентов ДЦТ</div>
-            <div className="items-news__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque rhoncus quisque neque urna euismod vestibulum, lorem
-              commodo id. Vitae pretium tristique sit quam nec. Commodo
-              hendrerit posuere ultrices in habitant ut.Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit. Pellentesque rhoncus quisque
-              neque urna euismod vestibulum, lorem commodo id. Vitae pretium
-              tristique sit quam nec. Commodo hendrerit posuere ultrices in
-              habitant ut.
-              <a href="">далее..</a>
-            </div>
-          </div>
-          <div className="news__items items-news">
-            <div className="items-news__data">
-              <div className="items-news__month">янв</div>
-              <div className="items-news__day">10</div>
-            </div>
-            <div className="items-news__title">Достижения студентов ДЦТ</div>
-            <div className="items-news__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque rhoncus quisque neque urna euismod vestibulum, lorem
-              commodo id. Vitae pretium tristique sit quam nec. Commodo
-              hendrerit posuere ultrices in habitant ut.Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit. Pellentesque rhoncus quisque
-              neque urna euismod vestibulum, lorem commodo id. Vitae pretium
-              tristique sit quam nec. Commodo hendrerit posuere ultrices in
-              habitant ut
-              <a href="">далее..</a>
-            </div>
-          </div>
-          <div className="news__items items-news">
-            <div className="items-news__data">
-              <div className="items-news__month">янв</div>
-              <div className="items-news__day">10</div>
-            </div>
-            <div className="items-news__title">Достижения студентов ДЦТ</div>
-            <div className="items-news__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque rhoncus quisque neque urna euismod vestibulum, lorem
-              commodo id. Vitae pretium tristique sit quam nec. Commodo
-              hendrerit posuere ultrices in habitant ut.Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit. Pellentesque rhoncus quisque
-              neque urna euismod vestibulum, lorem commodo id. Vitae pretium
-              tristique sit quam nec. Commodo hendrerit posuere ultrices in
-              habitant ut.
-              <a href=""> далее..</a>
-            </div>
-          </div>
+          <NewsItem
+            month="янв"
+            day="10"
+            title="Гостевые лекции"
+            text=" 
+
+23 декабря  для студентов 3 курса IT колледжа и 1 курса ДЦТ прошла гостевая лекция на тему: «Как написать структурированное эссе и подавать заявки в зарубежные ВУЗы». 
+О своём опыте написания мотивационных писем, эссе и обучении зарубежом рассказала выпускница КГЮА Жумагазиева Жипариза Базарбековна. 
+Лектор озвучил важность изучения английского языка и networkingа. 
+Жумагазиева Жипариза ответила на все вопросы студентов и дала обещание поддерживать их при написании эссе.
+"
+          />
+          <NewsItem
+            month="янв"
+            day="12"
+            title="Менторские группы"
+            text=" Мы организовали и запустили в Высшей IT школе три менторские группы по PHP, JS, Web программированию
+Студенты 3,4 курса, которые успешно работают в IT компаниях, решили помочь с проведением менторских групп. Ребята набрали по выполненным заданиям студентов имеющих желание и навыки. 
+Итак, разберемся в терминах:
+Mentor — человек, который делится знаниями и становится наставником.
+Mentee — человек, который учится у наставника.
+Вот что говорят Менторы о курсе: 
+«Многие люди стесняются признавать, что им нужна помощь. Не надо бояться задавать глупые вопросы. "
+          />
+          <NewsItem
+            month="янв"
+            day="15"
+            title="Мастер- класс по фотографированию"
+            text=" 15 декабря для студентов Высшей IT -школы проведён Мастер класс по фотографированию . 
+Фотограф Дастан Жуманалы поделился своим опытом и секретами профессиональной деятельности. 
+Студенты узнали  все самое основное о студийной фотосъемке, узнали секреты студийных фотографий профессионального уровня.  Это был практический 3-х часовой мастер-класс, где каждый участник, применил  полученные знания на практике.
+Студенты задавали вопросы и получали ответ от Дастана, как сделать это правильно и на профессиональном уровне."
+          />
         </div>
+        <NavLink className="news__button" to="/news">
+          Все новости
+        </NavLink>
       </div>
     </div>
   );

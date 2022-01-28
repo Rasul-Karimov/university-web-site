@@ -1,4 +1,4 @@
-$maxWidth: 1355;
+$maxWidth: 1620;
 @mixin adaptiv-value($value, $pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
@@ -14,14 +14,20 @@ $maxWidth: 1355;
 
 .news {
   &__block {
-    display: flex;
+    display: grid;
+    grid-template: 1fr / 380px 380px 380px;
     justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 10px;
-    @media (max-width: 850px) {
-      justify-content: center;
+    gap: 50px;
+    @media (max-width: 1280px) {
+      grid-template: 1fr 1fr /380px 380px;
     }
+    @media (max-width: 850px) {
+      grid-template: 1fr 1fr 1fr /1fr;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
   }
   &__items {
     background: #eaf3fa;
@@ -29,6 +35,7 @@ $maxWidth: 1355;
     @media (max-width: 850px) {
       flex: 0 0 100%;
     }
+    margin-bottom: 50px;
   }
   padding: 0 0 100px 0;
   &__title {
@@ -37,51 +44,24 @@ $maxWidth: 1355;
 
     padding: 150px 0 100px 0;
   }
-}
-.items-news {
-  position: relative;
-  @include adaptiv-value("padding-top", 120, 50);
-  padding: 120px 40px 20px 40px;
-  &__data {
-    height: 53px;
-    width: 47px;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
-  &__month {
-    background-color: #0054a5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    line-height: 12px;
-    color: #ffffff;
-  }
-  &__day {
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px;
-  }
-  &__title {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
+  &__button {
+    display: block;
+    margin: 0 auto;
+    max-width: 260px;
+    padding: 15px 54px;
+    background: #0054a5;
+    border: 2px solid #0054a5;
+    border-radius: 39px;
+    font-size: 20px;
+    line-height: 32px;
     text-align: center;
-    color: #0054a5;
-    margin-bottom: 35px;
-  }
-  &__text {
-    font-size: 12px;
-    line-height: 14px;
-    a {
-      font-size: 12px;
-      color: #0054a5;
-      text-decoration: underline;
-      font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    filter: drop-shadow(4px 4px 15px #0054a5);
+    color: #ffffff;
+    transition: all ease 300ms 0s;
+    &:hover {
+      background-color: #023b70;
     }
-    @include adaptiv-value("padding-bottom", 80, 40);
   }
 }

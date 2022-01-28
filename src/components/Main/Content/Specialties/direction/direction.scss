@@ -1,4 +1,4 @@
-$maxWidth: 1355;
+$maxWidth: 1620;
 @mixin adaptiv-value($value, $pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
@@ -32,33 +32,12 @@ $maxWidth: 1355;
     &:not(:last-child) {
       margin-bottom: 20px;
     }
-    &::before {
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%);
-      left: 0;
-
-      content: "";
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      border: 1px solid #0054a5;
-      transition: all ease 300ms 0s;
-    }
-    &:hover::before {
-      background-color: #0054a5;
-    }
-    &:hover {
-      .item-specialties__link {
-        color: #0054a5;
-      }
-    }
   }
   &__link {
     color: inherit;
     font-weight: bold;
     line-height: 21px;
-    color: #cecece;
+    cursor: default;
   }
 
   &__button-link {
@@ -78,8 +57,9 @@ $maxWidth: 1355;
     padding-left: 30px;
     padding-right: 20px;
     transition: all ease 300ms 0s;
+    transition: all ease 300ms 0s;
     &:hover {
-      background: #002950;
+      background-color: #00386d;
     }
   }
 }

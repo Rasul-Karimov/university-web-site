@@ -60,9 +60,11 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+
 a {
   color: inherit;
 }
+
 a,
 a:visited {
   text-decoration: none;
@@ -95,11 +97,13 @@ h6 {
   font-size: 18px;
   font-family: Raleway;
 }
+
 .container {
-  max-width: 1375px;
+  max-width: 1620px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
+
 .title {
   font-size: 32px;
   line-height: 150%;
@@ -108,5 +112,16 @@ h6 {
   color: #0054a5;
   font-weight: bold;
 }
-.button {
+.active {
+  color: #0054a5;
+  position: relative;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  top: 150%;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #0054a5;
 }

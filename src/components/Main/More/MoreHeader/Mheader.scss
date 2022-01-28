@@ -1,4 +1,4 @@
-$maxWidth: 1355;
+$maxWidth: 1620;
 @mixin adaptiv-value($value, $pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
@@ -26,6 +26,7 @@ $maxWidth: 1355;
     position: relative;
     z-index: 10;
     margin-bottom: 200px;
+    @include adaptiv-value("margin-bottom", 200, 80);
   }
   &__title {
     padding: 10px 0 0 0;
@@ -41,6 +42,10 @@ $maxWidth: 1355;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 456px) {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+    }
   }
   &__text {
     max-width: 500px;
@@ -48,16 +53,24 @@ $maxWidth: 1355;
 
     h3 {
       font-weight: bold;
-      font-size: 28px;
+      @include adaptiv-value("font-size", 28, 24);
       line-height: 150%;
       text-align: center;
       color: #0054a5;
     }
     p {
-      font-size: 24px;
+      @include adaptiv-value("font-size", 24, 20);
+
       line-height: 150%;
       text-align: center;
       color: #0054a5;
+    }
+  }
+  &__img {
+    width: 129px;
+    height: 102px;
+    img {
+      width: 100%;
     }
   }
 }

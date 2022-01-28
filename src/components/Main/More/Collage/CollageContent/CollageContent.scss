@@ -1,21 +1,47 @@
+$maxWidth: 1620;
+@mixin adaptiv-value($value, $pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media (max-width: 767px) {
+    #{$value}: calc(
+      #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
+    );
+  }
+  @media (min-width: 767px) {
+    #{$value}: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
+}
+
 .content-more {
   padding: 0 0 20px 0;
   &__items {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 50px;
   }
   &__item {
+    &:last-child {
+      margin-bottom: 100px;
+    }
     flex: 0 0 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 50px;
   }
   &__img {
+    max-height: 423px;
+    max-width: 558px;
+
     flex: 0 0 50%;
     @media (max-width: 1300px) {
       text-align: center;
       flex: 0 0 100%;
+    }
+    img {
+      width: 100%;
     }
   }
   @media (min-width: 1300px) {
@@ -55,15 +81,16 @@
 .text-content-more {
   &__title {
     font-weight: bold;
-    font-size: 30px;
-    line-height: 35px;
+    @include adaptiv-value("font-size", 30, 24);
+    line-height: 150%;
     text-align: center;
 
     color: #0054a5;
     span {
       font-weight: normal;
-      font-size: 30px;
-      line-height: 35px;
+      @include adaptiv-value("font-size", 30, 24);
+
+      line-height: 150%;
       text-align: center;
 
       color: #0054a5;

@@ -1,4 +1,4 @@
-$maxWidth: 1355;
+$maxWidth: 1620;
 @mixin adaptiv-value($value, $pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
@@ -19,12 +19,16 @@ $maxWidth: 1355;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
     @media (max-width: 1050px) {
       justify-content: center;
     }
   }
   &__content {
-    flex: 1 1 35%;
+    flex: 0 0 35%;
+    @media (max-width: 1050px) {
+      flex: 0 0 100%;
+    }
   }
   &__title {
     font-size: 32px;
@@ -56,6 +60,8 @@ $maxWidth: 1355;
     }
   }
   &__img {
+    max-height: 397px;
+    max-width: 675px;
     img {
       width: 100%;
     }
@@ -69,22 +75,22 @@ $maxWidth: 1355;
   border-radius: 39px;
   font-size: 14px;
   line-height: 22px;
-  text-align: center;
   color: white;
   width: 251px;
   height: 57.92px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   transition: all ease 300ms 0s;
+  padding-right: 35px;
   &:hover {
     background-color: #00305e;
   }
   img {
     position: absolute;
     top: 18px;
-    left: 170px;
+    left: 145px;
     padding-left: 10px;
   }
+}
+.title {
+  @include adaptiv-value("font-size", 32, 24);
 }

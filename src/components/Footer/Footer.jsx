@@ -1,5 +1,9 @@
 import React from "react";
 import "./footer.css";
+import face from "../../img/faceWhite.png";
+import inst from "../../img/InstWhite.png";
+import whatsapp from "../../img/whatWhite.png";
+
 function Footer() {
   return (
     <div className="footer">
@@ -80,9 +84,20 @@ function Footer() {
                   </a>
                 </li>
               </ul>
-              <h3 className="footer__title footer-messengers">
-                Мы в соц сетях
-              </h3>
+            </div>
+          </div>
+          <div className="footer__messengers">
+            <h3>Портал</h3>
+            <div>
+              <a href="" target="_blank">
+                <img src={face} alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src={inst} alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src={whatsapp} alt="" />
+              </a>
             </div>
           </div>
           <form action="#" className="footer__form form-footer">
