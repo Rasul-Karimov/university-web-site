@@ -4,16 +4,41 @@ import { ReactComponent as Inst } from "../../img/instaSbg.svg";
 import { ReactComponent as Telegram } from "../../img/tgSvg.svg";
 import { ReactComponent as Whatsapp } from "../../img/whatsappSvg.svg";
 import { ReactComponent as TicToc } from "../../img/ticTokSvg.svg";
-
+import { useState } from "react";
 import { Link } from "react-router-dom";
 function Footer() {
+  let [showMenu1, setShowMenu1] = useState(false);
+  let [showMenu2, setShowMenu2] = useState(false);
+  let [showMenu3, setShowMenu3] = useState(false);
+  let active1 = "_active1";
+  let active2 = "_active2";
+  let active3 = "_active3";
+  let active4 = "_active4";
+
+  function clickMenu1() {
+    setShowMenu1(!showMenu1);
+    console.log("hello");
+  }
+  function clickMenu2() {
+    setShowMenu2(!showMenu2);
+    console.log("hello");
+  }
+  function clickMenu3() {
+    setShowMenu3(!showMenu3);
+    console.log("hello");
+  }
   return (
     <div className="footer">
       <div className="container">
         <div className="footer__container container">
           <div className="footer__items">
             <div className="footer__item">
-              <div className="footer__title">О нас</div>
+              <h3
+                onClick={clickMenu1}
+                className={`footer__title ${showMenu1 ? active1 : null}`}
+              >
+                О нас
+              </h3>
               <ul className="footer__list">
                 <li className="footer__item"></li>
                 <li className="footer__item">
@@ -39,7 +64,12 @@ function Footer() {
             </div>
 
             <div className="footer__item">
-              <div className="footer__title">Поступающим</div>
+              <h3
+                onClick={clickMenu2}
+                className={`footer__title ${showMenu2 ? active2 : null}`}
+              >
+                Поступающим
+              </h3>
               <ul className="footer__list">
                 <li className="footer__item">
                   <Link to="/department" className="footer__link">
@@ -54,7 +84,12 @@ function Footer() {
               </ul>
             </div>
             <div className="footer__item">
-              <div className="footer__title">Контакты</div>
+              <h3
+                onClick={clickMenu3}
+                className={`footer__title  ${showMenu3 ? active3 : null}`}
+              >
+                Контакты
+              </h3>
               <ul className="footer__list">
                 <li className="footer__item">
                   <Link to="" className="footer__link">
@@ -113,7 +148,7 @@ function Footer() {
               <input type="text" placeholder="ФИО" />
             </div>
             <div className="form-footer__input-tel">
-              <input type="tel" placeholder="Телефона" />
+              <input type="tel" placeholder="Телефон" />
             </div>
             <button className="form-footer__btn" type="submit">
               Отправить

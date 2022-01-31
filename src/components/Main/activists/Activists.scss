@@ -26,7 +26,9 @@ $maxWidth: 1620;
     height: 200px;
   }
   &__container {
-    margin-top: 200px;
+    position: relative;
+    z-index: 10;
+    @include adaptiv-value("margin-top", 200, 80);
   }
   &__block {
     display: flex;

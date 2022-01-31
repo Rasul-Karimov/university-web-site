@@ -97,7 +97,7 @@ const Activists = () => {
             />
             <Active
               img={activist8}
-              name="Жолойбеков Рыспеков "
+              name="Жолойбеков Рысбек "
               motto="Заведующий дисциплинированного сектора"
             />
             <Active

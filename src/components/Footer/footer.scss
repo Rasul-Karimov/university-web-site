@@ -20,7 +20,7 @@ $maxWidth: 1620;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 50px;
+    @include adaptiv-value("gap", 50, 20);
   }
   &__items {
     display: flex;
@@ -36,16 +36,35 @@ $maxWidth: 1620;
   }
 
   &__title {
-    font-size: 24px;
+    @include adaptiv-value("font-size", 24, 20);
     line-height: 28px;
     color: #ffffff;
-    @include adaptiv-value("margin-bottom", 55, 10);
+    margin-bottom: 50px;
+    @media (max-width: 1200px) {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+  &__title._active1 ~ &__list {
+    display: block;
+    opacity: 1;
+  }
+  &__title._active2 ~ &__list {
+    display: block;
+    opacity: 1;
+  }
+  &__title._active3 ~ &__list {
+    display: block;
+    opacity: 1;
   }
   &__link {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 30px;
     color: #ffffff;
     transition: all ease 300ms 0s;
+    @media (max-width: 1200px) {
+      text-decoration: underline;
+    }
     @media (any-hover: hover) {
       &:hover {
         color: #fc3b3b;
@@ -61,10 +80,12 @@ $maxWidth: 1620;
   &__list {
     @media (max-width: 1200px) {
       display: none;
+      opacity: 0;
+      transition: all ease 300ms 0s;
     }
   }
   &__item:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   &__copyright {
     font-size: 14px;
@@ -74,11 +95,14 @@ $maxWidth: 1620;
   &__messengers {
     flex: 0 0 10%;
     h3 {
-      font-size: 24px;
+      @include adaptiv-value("font-size", 24, 20);
       line-height: 28px;
       text-align: center;
       color: #ffffff;
       @include adaptiv-value("margin-bottom", 52, 30);
+      @media (max-width: 480px) {
+        text-align: left;
+      }
     }
     div {
       display: flex;
@@ -110,7 +134,7 @@ $maxWidth: 1620;
   @include adaptiv-value("padding-right", 40, 25);
   @include adaptiv-value("padding-left", 40, 25);
   @include adaptiv-value("padding-bottom", 20, 15);
-
+  height: 290px;
   background: #ffffff;
   border-radius: 41px;
   display: flex;
@@ -130,7 +154,7 @@ $maxWidth: 1620;
     width: 240px;
     height: 41px;
     @media (max-width: 480px) {
-      width: 230px;
+      width: 200px;
     }
     background: #0054a5;
     border-radius: 32px;
@@ -169,9 +193,11 @@ $maxWidth: 1620;
   transition: all ease 300ms 0s;
   fill: white;
 }
-.icon-footer:hover {
-  & * {
-    fill: #008ffc;
+@media (any-hover: hover) {
+  .icon-footer:hover {
+    & * {
+      fill: #008ffc;
+    }
   }
 }
 .footer-whatsapp {

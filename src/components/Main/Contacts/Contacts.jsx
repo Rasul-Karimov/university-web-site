@@ -5,9 +5,6 @@ import { ReactComponent as Whatsapp } from "../../../img/whatsappSvg.svg";
 import { ReactComponent as Telegram } from "../../../img/tgSvg.svg";
 import { ReactComponent as TicTok } from "../../../img/ticTokSvg.svg";
 import { ReactComponent as Insta } from "../../../img/instaSbg.svg";
-import map from "../../../img/map-contacts.png";
-import Buttons from "../Buttons/Buttons";
-
 const Contacts = () => {
   return (
     <div className="contacts">
@@ -15,7 +12,7 @@ const Contacts = () => {
       <div className="contacts__title title">Контакты</div>
       <div className="contacts__container container">
         <div className="contacts__adres">
-          <span>Адрес: </span> Кыргызская Республика г. Бишкек ул. Горького, 18
+          <span>Адрес: </span> Кыргызская Республика г.Бишкек ул.Горького, 18
         </div>
         <a href="tel:+996700406730" className="contacts__phone">
           <span>Телефон:</span>+996700406730

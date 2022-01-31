@@ -26,23 +26,26 @@
           column-gap: 20px;
 }
 
-.buttons-component:hover {
-  -webkit-box-shadow: 1px 1px 1px 1px 5px #0054a5;
-          box-shadow: 1px 1px 1px 1px 5px #0054a5;
-  background-color: white;
-  color: #0054a5;
+@media (any-hover: hover) {
+  .buttons-component:hover {
+    -webkit-box-shadow: 1px 1px 1px 1px 5px #0054a5;
+            box-shadow: 1px 1px 1px 1px 5px #0054a5;
+    background-color: white;
+    color: #0054a5;
+  }
 }
 
 .buttons-component__btn {
   color: inherit;
 }
 
-.buttons-component:hover {
-  color: blue;
-}
-
-.buttons-component:hover .buttons-component__arrow * {
-  fill: blue;
+@media (any-hover: hover) {
+  .buttons-component:hover {
+    color: blue;
+  }
+  .buttons-component:hover .buttons-component__arrow * {
+    fill: blue;
+  }
 }
 
 .buttons-component__arrow * {

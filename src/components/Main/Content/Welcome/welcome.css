@@ -48,11 +48,22 @@
 }
 
 .welcome__title {
-  font-size: 32px;
-  line-height: 38px;
+  line-height: 150%;
   color: #0054a5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .welcome__title {
+    font-size: calc( 26px + 10.2 * ((100vw - 320px) / 1620));
+  }
+}
+
+@media (min-width: 767px) {
+  .welcome__title {
+    font-size: calc(26px + 6 * (100vw / 1620));
+  }
 }
 
 .welcome__text {
@@ -71,33 +82,6 @@
   }
 }
 
-.welcome__button {
-  background: #0054a5;
-  border: 2px solid #0054a5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 39px;
-  font-size: 14px;
-  line-height: 22px;
-  text-align: center;
-  color: white;
-  width: 251px;
-  height: 57.92px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.welcome__button img {
-  padding-left: 10px;
-}
-
 .welcome__img {
   max-height: 397px;
   max-width: 675px;
@@ -105,36 +89,6 @@
 
 .welcome__img img {
   width: 100%;
-}
-
-.button {
-  background: #0054a5;
-  border: 2px solid #0054a5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 39px;
-  font-size: 14px;
-  line-height: 22px;
-  color: white;
-  width: 251px;
-  height: 57.92px;
-  position: relative;
-  -webkit-transition: all ease 300ms 0s;
-  transition: all ease 300ms 0s;
-  padding-right: 35px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: white;
-  color: #0054a5;
-}
-
-.button img {
-  position: absolute;
-  top: 18px;
-  left: 145px;
-  padding-left: 10px;
 }
 
 @media (max-width: 767px) {

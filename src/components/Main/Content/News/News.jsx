@@ -4,7 +4,7 @@ import "./news.css";
 import { NavLink } from "react-router-dom";
 import Buttons from "../../Buttons/Buttons";
 import { useContext } from "react";
-import { NewsContext } from "../../NewsContext";
+import { NewsContext } from "../../NewsContext/NewsContext";
 const News = () => {
   const newsMain = useContext(NewsContext);
   return (

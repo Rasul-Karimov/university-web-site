@@ -107,14 +107,17 @@ $maxWidth: 1620;
   &__blocks {
     display: grid;
     grid-template: 1fr auto/1fr 1fr;
-    column-gap: 50px;
+    @include adaptiv-value("column-gap", 50, 30);
     @media (max-width: 1100px) {
-      flex-wrap: wrap;
+      display: block;
     }
     div {
       display: grid;
       grid-template: 1fr 1fr/1fr;
-      @include adaptiv-value("margin-top", 107, 50);
+      @include adaptiv-value("margin-top", 107, 20);
+      @media (max-width: 1100px) {
+        display: block;
+      }
     }
   }
   &__question {

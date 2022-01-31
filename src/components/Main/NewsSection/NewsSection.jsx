@@ -2,7 +2,7 @@ import React from "react";
 import "./NewsSection.css";
 import NewsItem from "../NewsItem/NewsItem";
 import { useContext } from "react";
-import { NewsContext } from "../NewsContext";
+import { NewsContext } from "../NewsContext/NewsContext";
 import img1 from "../../../img/Новости/img1.png";
 import img2 from "../../../img/Новости/img2.png";
 import img3 from "../../../img/Новости/img3.png";

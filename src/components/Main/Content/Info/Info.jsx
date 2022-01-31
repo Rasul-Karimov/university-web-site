@@ -28,7 +28,7 @@ const Info = () => {
         </div>
         <Buttons
           class="information__button"
-          to="/news"
+          to="/about"
           title="подробнее"
           arrow={true}
         />

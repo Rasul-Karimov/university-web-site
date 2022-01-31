@@ -16,7 +16,20 @@
 }
 
 .activists__container {
-  margin-top: 200px;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 767px) {
+  .activists__container {
+    margin-top: calc( 80px + 204 * ((100vw - 320px) / 1620));
+  }
+}
+
+@media (min-width: 767px) {
+  .activists__container {
+    margin-top: calc(80px + 120 * (100vw / 1620));
+  }
 }
 
 .activists__block {

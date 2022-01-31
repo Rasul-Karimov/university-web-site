@@ -40,7 +40,7 @@ function Header() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{}}
               >
-                <NavLink to="/" className="menu__link">
+                <NavLink onClick={clickBurger} to="/" className="menu__link">
                   Главная
                 </NavLink>
               </motion.li>
@@ -61,12 +61,20 @@ function Header() {
                 </Link>
                 <ul className="menu__sublist">
                   <li className="menu__subitem">
-                    <Link to="/administration" className="menu__sublink">
+                    <Link
+                      onClick={clickBurger}
+                      to="/administration"
+                      className="menu__sublink"
+                    >
                       Администрация
                     </Link>
                   </li>
                   <li className="menu__subitem">
-                    <Link to="/news" className="menu__sublink">
+                    <Link
+                      onClick={clickBurger}
+                      to="/news"
+                      className="menu__sublink"
+                    >
                       Новости
                     </Link>
                   </li>
@@ -98,17 +106,29 @@ function Header() {
                 </Link>
                 <ul className="menu__sublist">
                   <li className="menu__subitem">
-                    <Link to="/whywe" className="menu__sublink">
+                    <Link
+                      to="/whywe"
+                      className="menu__sublink"
+                      onClick={clickBurger}
+                    >
                       Почему мы?
                     </Link>
                   </li>
                   <li className="menu__subitem">
-                    <Link to="/department" className="menu__sublink">
+                    <Link
+                      onClick={clickBurger}
+                      to="/department"
+                      className="menu__sublink"
+                    >
                       Бакалавр
                     </Link>
                   </li>
                   <li className="menu__subitem">
-                    <Link to="/collage" className="menu__sublink">
+                    <Link
+                      onClick={clickBurger}
+                      to="/collage"
+                      className="menu__sublink"
+                    >
                       Колледж
                     </Link>
                   </li>
@@ -125,6 +145,7 @@ function Header() {
                 <NavLink
                   to="/students"
                   className={`menu__link ${menuVisible ? menuActive : null}`}
+                  onClick={clickBurger}
                 >
                   Студентам
                 </NavLink>
@@ -156,6 +177,7 @@ function Header() {
                 <NavLink
                   to="/contacts"
                   className={`menu__link ${menuVisible ? menuActive : null}`}
+                  onClick={clickBurger}
                 >
                   Контакты
                 </NavLink>

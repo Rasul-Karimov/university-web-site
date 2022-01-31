@@ -65,7 +65,7 @@
     transition: all ease 500ms 0s;
     position: absolute;
     z-index: 11;
-    top: -100%;
+    top: -300%;
     right: -20px;
     width: 50%;
     padding: 30px;
@@ -196,10 +196,12 @@
   font-size: 15px;
 }
 
-.menu__sublink:hover {
-  border: 1px solid #0073ff;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+@media (any-hover: hover) {
+  .menu__sublink:hover {
+    border: 1px solid #0073ff;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
 }
 
 .menu .search {

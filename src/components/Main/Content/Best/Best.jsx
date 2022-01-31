@@ -54,7 +54,7 @@ const Best = () => {
                   <div className="best__img">
                     <img src={activist1} alt="" />
                   </div>
-                  <p className="title">Ырысбек</p>
+                  <p className="title">Рысбек</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -118,7 +118,7 @@ const Best = () => {
                   <div className="best__img">
                     <img src={activist7} alt="" />
                   </div>
-                  <p className="title">Айполчон</p>
+                  <p className="title">Айчолпон</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>

@@ -15,25 +15,28 @@
   transition: all ease 300ms 0s;
   box-shadow: 5px 5px 15px #0054a5;
   column-gap: 20px;
-  &:hover {
-    box-shadow: 1px 1px 1px 1px 5px#0054a5;
-    background-color: white;
-    color: #0054a5;
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: 1px 1px 1px 1px 5px#0054a5;
+      background-color: white;
+      color: #0054a5;
+    }
   }
   &__btn {
     color: inherit;
   }
-  &:hover {
-    .buttons-component__arrow * {
-      fill: blue;
+  @media (any-hover: hover) {
+    &:hover {
+      .buttons-component__arrow * {
+        fill: blue;
+      }
+      color: blue;
     }
-    color: blue;
   }
+
   &__arrow {
     & * {
       transition: all ease 300ms 0s;
-    }
-    &:hover {
     }
   }
 }
