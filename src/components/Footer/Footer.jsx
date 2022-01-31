@@ -58,7 +58,7 @@ function Footer() {
               <ul className="footer__list">
                 <li className="footer__item">
                   <Link to="" className="footer__link">
-                    почта
+                    Почта
                   </Link>
                 </li>
                 <li className="footer__item">
@@ -67,7 +67,7 @@ function Footer() {
                     href="https://2gis.kg/bishkek/firm/70000001040535756?m=74.630391%2C42.854913%2F17.27"
                     className="footer__link"
                   >
-                    Горкий 18а
+                    ул.Горького 18
                   </a>
                 </li>
                 <li className="footer__item">
