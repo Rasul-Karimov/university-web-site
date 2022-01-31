@@ -120,3 +120,28 @@
 .contact__map-img img {
   width: 100%;
 }
+
+.icon-contacts * {
+  -webkit-transition: all ease 300ms 0s;
+  transition: all ease 300ms 0s;
+}
+
+.icon-contacts:hover * {
+  fill: #59b4fa;
+}
+
+iframe {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  iframe {
+    height: 500px;
+  }
+}
+
+@media (max-width: 680px) {
+  iframe {
+    height: 350px;
+  }
+}

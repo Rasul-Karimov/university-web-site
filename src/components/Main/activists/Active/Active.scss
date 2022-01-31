@@ -15,10 +15,15 @@ $maxWidth: 1620;
 .team-activists {
   &__item {
     flex: 0 0 18%;
+    text-align: center;
+    @media (max-width: 500px) {
+      justify-self: center;
+    }
     &:first-child {
       flex: 0 0 100%;
       text-align: center;
       justify-self: center;
+
       @include adaptiv-value("margin-bottom", 80, 40);
       .team-activists__name {
         position: relative;

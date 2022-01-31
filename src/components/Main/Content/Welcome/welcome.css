@@ -122,10 +122,12 @@
   -webkit-transition: all ease 300ms 0s;
   transition: all ease 300ms 0s;
   padding-right: 35px;
+  cursor: pointer;
 }
 
 .button:hover {
-  background-color: #00305e;
+  background-color: white;
+  color: #0054a5;
 }
 
 .button img {

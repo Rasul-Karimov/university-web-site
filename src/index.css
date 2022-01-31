@@ -125,3 +125,19 @@ h6 {
   width: 100%;
   background-color: #0054a5;
 }
+.swiper-wrapper {
+  height: 700px;
+}
+.swiper-slide {
+  width: 250px;
+  height: 250px;
+}
+a {
+  transition: all 300ms ease 0s;
+}
+a:hover {
+  transform: scale(1.1);
+}
+.icon-footer {
+  fill: white;
+}

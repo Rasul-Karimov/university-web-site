@@ -1,9 +1,11 @@
 import React from "react";
 import "./footer.css";
-import face from "../../img/faceWhite.png";
-import inst from "../../img/InstWhite.png";
-import whatsapp from "../../img/whatWhite.png";
+import { ReactComponent as Inst } from "../../img/instaSbg.svg";
+import { ReactComponent as Telegram } from "../../img/tgSvg.svg";
+import { ReactComponent as Whatsapp } from "../../img/whatsappSvg.svg";
+import { ReactComponent as TicToc } from "../../img/ticTokSvg.svg";
 
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="footer">
@@ -13,25 +15,21 @@ function Footer() {
             <div className="footer__item">
               <div className="footer__title">О нас</div>
               <ul className="footer__list">
+                <li className="footer__item"></li>
                 <li className="footer__item">
-                  <a href="" className="footer__link">
-                    История
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a href="" className="footer__link">
+                  <Link to="/administration" className="footer__link">
                     Администрация
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__item">
-                  <a href="" className="footer__link">
+                  <Link to="/news" className="footer__link">
                     Новости
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__item">
                   <a
                     target="_blank"
-                    href="https://www.ksla.kg/ru/o-kgiua/social/"
+                    href="https://vokrug.kg/kgua-2.html"
                     className="footer__link"
                   >
                     Виртуальный тур
@@ -44,24 +42,14 @@ function Footer() {
               <div className="footer__title">Поступающим</div>
               <ul className="footer__list">
                 <li className="footer__item">
-                  <a href="" className="footer__link">
+                  <Link to="/department" className="footer__link">
                     Бакалавр
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__item">
-                  <a href="" className="footer__link">
+                  <Link to="/collage" className="footer__link">
                     Колледж
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a href="" className="footer__link">
-                    FAQ
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a href="" className="footer__link">
-                    Обьявление
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -69,18 +57,25 @@ function Footer() {
               <div className="footer__title">Контакты</div>
               <ul className="footer__list">
                 <li className="footer__item">
-                  <a href="" className="footer__link">
-                    0707676767
-                  </a>
+                  <Link to="" className="footer__link">
+                    почта
+                  </Link>
                 </li>
                 <li className="footer__item">
-                  <a href="" className="footer__link">
-                    Почта
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a href="" className="footer__link">
+                  <a
+                    target="_blank"
+                    href="https://2gis.kg/bishkek/firm/70000001040535756?m=74.630391%2C42.854913%2F17.27"
+                    className="footer__link"
+                  >
                     Горкий 18а
+                  </a>
+                </li>
+                <li className="footer__item">
+                  <a
+                    href="tel:+996700406730"
+                    className="footer__link footer__number"
+                  >
+                    0700-40-67-30
                   </a>
                 </li>
               </ul>
@@ -89,14 +84,26 @@ function Footer() {
           <div className="footer__messengers">
             <h3>Портал</h3>
             <div>
-              <a href="" target="_blank">
-                <img src={face} alt="" />
+              <a
+                href="https://instagram.com/itacademy_ksla?utm_medium=copy_link"
+                target="_blank"
+              >
+                <Inst className="icon-footer" />
               </a>
-              <a href="" target="_blank">
-                <img src={inst} alt="" />
+              <a href="https://t.me/itksla" target="_blank">
+                <Telegram className="icon-footer" />
               </a>
-              <a href="" target="_blank">
-                <img src={whatsapp} alt="" />
+              <a
+                href="https://api.whatsapp.com/send/?phone=996700406730"
+                target="_blank"
+              >
+                <Whatsapp className="icon-footer footer-whatsapp" />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=996700406730"
+                target="_blank"
+              >
+                <TicToc className="icon-footer" />
               </a>
             </div>
           </div>

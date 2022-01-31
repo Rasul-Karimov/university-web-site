@@ -1,6 +1,8 @@
 import "./info.css";
 import background from "../../../../img/background.png";
-import Button from "../button/Button";
+import Buttons from "../../Buttons/Buttons";
+import { ReactComponent as Arrow } from "../../../../img/arrowSvg.svg";
+import { Link } from "react-router-dom";
 const Info = () => {
   return (
     <div className="information">
@@ -24,7 +26,12 @@ const Info = () => {
             <div className="items-info__text">4</div>
           </div>
         </div>
-        <Button align="0 auto" adres="/about" />
+        <Buttons
+          class="information__button"
+          to="/news"
+          title="подробнее"
+          arrow={true}
+        />
       </div>
     </div>
   );

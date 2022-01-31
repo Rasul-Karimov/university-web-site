@@ -6,6 +6,13 @@
   }
   &__logo {
     margin-right: auto;
+    // position: relative;
+    // z-index: 15;
+    a {
+      img {
+        width: 100%;
+      }
+    }
   }
   &__search {
     display: flex;
@@ -40,13 +47,19 @@
   @media (max-width: 1200px) {
     transition: all ease 500ms 0s;
     position: absolute;
+    z-index: 11;
     top: -100%;
-    left: 0;
-    width: 100%;
+    right: -20px;
+    width: 50%;
     padding: 30px;
+    height: auto;
     // transform: translate(-50%, 0);
-    text-align: center;
+    text-align: right;
     background-color: #dbedfa;
+    padding: 80px 20px 20px 20px;
+  }
+  @media (max-width: 680px) {
+    width: 100%;
   }
   margin-right: 20px;
   &__list {
@@ -67,7 +80,7 @@
           opacity: 1;
           visibility: visible;
           pointer-events: painted;
-          transform: translate(0, 0);
+          transform: translate(-20px, 0);
         }
       }
     }
@@ -77,9 +90,29 @@
       font-size: 22px;
       line-height: 150%;
     }
+    &._active {
+      & ~ .menu__sublist {
+        @media (any-hover: none) {
+          top: 120%;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: painted;
+        }
+      }
+    }
+    &._active {
+      & ~ .menu__sublist {
+        @media (max-width: 1200px) {
+          position: relative;
+          display: block;
+          transform: translate(22px, 0);
+        }
+      }
+    }
   }
   &__sublist {
-    display: none;
+    min-width: 200px;
+    margin-right: 20px;
     @media (max-width: 1200px) {
       display: none;
     }
@@ -94,18 +127,34 @@
       visibility: hidden;
       pointer-events: none;
       transition: all ease 300ms 0s;
-      background: #dbedfa;
-      min-width: 300px;
+      min-width: 280px;
       transform: translate(0, 20px);
+    }
+    @media (any-hover: none) {
+      position: absolute;
+      transition: all ease 300ms 0s;
+      top: -100%;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
     }
   }
   &__subitem {
     line-height: 150%;
   }
   &__sublink {
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #a2a7ad;
     transition: all ease 300ms 0s;
+    text-align: center;
+    padding: 15px 0;
+    color: #0054a5;
+    font-size: 15px;
     &:hover {
-      color: #fc3b3b;
+      border: 1px solid #0073ff;
+      transform: scale(1.05);
     }
   }
   .search {
@@ -117,7 +166,7 @@
     }
   }
 }
-.active .menu {
+._active .menu {
   top: 0;
 }
 
@@ -138,7 +187,7 @@
       }
     }
   }
-  .active {
+  ._active {
     .header__menu-btn {
       span {
         &:nth-child(1) {

@@ -6,6 +6,16 @@
   text-align: center;
 }
 
+.information__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media (max-width: 767px) {
   .information {
     padding-top: calc( 40px + 215.9 * ((100vw - 320px) / 1620));
@@ -84,6 +94,10 @@
 
 .information__items {
   margin-bottom: 70px;
+}
+
+.information__button {
+  margin: 0 auto;
 }
 
 .items-info__title {

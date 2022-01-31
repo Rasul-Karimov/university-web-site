@@ -8,6 +8,18 @@ import activist3 from "../../../img/active3.png";
 import activist4 from "../../../img/active4.png";
 import activist5 from "../../../img/active5.png";
 import activist6 from "../../../img/active6.png";
+import activist7 from "../../../img/активисты/image11.png";
+import activist8 from "../../../img/активисты/image1.png";
+import activist9 from "../../../img/активисты/image2.png";
+import activist10 from "../../../img/активисты/image3.png";
+import activist11 from "../../../img/активисты/image4.png";
+import activist12 from "../../../img/активисты/image5.png";
+import activist13 from "../../../img/активисты/image6.png";
+import activist14 from "../../../img/активисты/image7.png";
+import activist15 from "../../../img/активисты/image8.png";
+import activist16 from "../../../img/активисты/image9.png";
+import activist17 from "../../../img/активисты/image10.png";
+
 import Active from "./Active/Active";
 
 const Activists = () => {
@@ -79,59 +91,59 @@ const Activists = () => {
           </div>
           <div className="team-activists__items">
             <Active
-              img={activist1}
-              name="Абдулалиев Алишер"
-              motto="Председатель студенческого совета ДЦТ"
+              img={activist7}
+              name="Жумагулов Асылбек"
+              motto="студент 2 курса"
             />
             <Active
-              img={activist2}
-              name="Айткулов Эмир "
-              motto="Председатель студенческого совета ДЦТ"
+              img={activist8}
+              name="Жолойбеков Рыспеков "
+              motto="Заведующий дисциплинированного сектора"
             />
             <Active
-              img={activist3}
-              name="Джаконова Нуржана"
-              motto="Заведующая культурно- массового сектора"
+              img={activist9}
+              name="Ормонова Айжан"
+              motto="студентка 3 курса колледжа"
             />
             <Active
-              img={activist4}
-              name="Кылычбек уулу Бекжан"
-              motto="Заведующий  информационного сектора"
+              img={activist10}
+              name="Муратазиев Асан"
+              motto="студент 3 курса"
             />
             <Active
-              img={activist5}
-              name="Асанбекова Эльнура"
-              motto="Председатель студенческого совета IT- колледжа"
+              img={activist11}
+              name="Алмазбекова Бегимай"
+              motto="студентка 3 курса"
             />
             <Active
-              img={activist6}
-              name="Мурсалиева Перизат"
-              motto="Заместитель председателя IT- колледжа"
+              img={activist12}
+              name="Зайыров Данияр"
+              motto="студент 2 курса колледжа"
             />
             <Active
-              img={activist2}
-              name="Айткулов Эмир "
-              motto="Председатель студенческого совета ДЦТ"
+              img={activist13}
+              name="Миталипов Сыймык "
+              motto="студент 2 курса"
             />
             <Active
-              img={activist3}
-              name="Джаконова Нуржана"
-              motto="Заведующая культурно- массового сектора"
+              img={activist14}
+              name="Атантаева Айтолгон"
+              motto="студентка 3 курса колледжа"
             />
             <Active
-              img={activist4}
-              name="Кылычбек уулу Бекжан"
-              motto="Заведующий  информационного сектора"
+              img={activist15}
+              name="Молдояров Эльдар"
+              motto="студент 2 курса колледжа"
             />
             <Active
-              img={activist5}
-              name="Асанбекова Эльнура"
-              motto="Председатель студенческого совета IT- колледжа"
+              img={activist16}
+              name="Ирсалиева Айыма"
+              motto="студент 2 курса"
             />
             <Active
-              img={activist6}
-              name="Мурсалиева Перизат"
-              motto="Заместитель председателя IT- колледжа"
+              img={activist17}
+              name="Каримов Расулбек"
+              motto="студент 2 курса"
             />
           </div>
         </div>

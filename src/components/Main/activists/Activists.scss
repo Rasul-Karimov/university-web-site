@@ -60,6 +60,9 @@ $maxWidth: 1620;
   @include adaptiv-value("padding-top", 80, 40);
   display: flex;
   justify-content: space-between;
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 65px;

@@ -68,17 +68,9 @@ $maxWidth: 1620;
   &__more-btn {
     display: block;
     width: 180px;
-    background: #0054a5;
-    box-shadow: 4px 4px 10px #0054a5;
-    font-size: 12px;
-    line-height: 14px;
-    padding: 17px 0;
+    border-radius: 0;
     text-align: center;
-    margin-bottom: 36px;
-    color: #ffffff;
-    transition: all ease 300ms 0s;
-    &:hover {
-      background: #023361;
-    }
+    margin-bottom: 20px;
+    padding: 14px 0;
   }
 }

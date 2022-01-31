@@ -159,36 +159,25 @@
 }
 
 @media (max-width: 767px) {
-  .questions-whyWe__title {
+  .whyWe__questions {
     margin-bottom: calc( 50px + 170 * ((100vw - 320px) / 1620));
   }
 }
 
 @media (min-width: 767px) {
-  .questions-whyWe__title {
+  .whyWe__questions {
     margin-bottom: calc(50px + 100 * (100vw / 1620));
   }
 }
 
-@media (max-width: 767px) {
-  .questions-whyWe {
-    margin-bottom: calc( 50px + 255 * ((100vw - 320px) / 1620));
-  }
-}
-
-@media (min-width: 767px) {
-  .questions-whyWe {
-    margin-bottom: calc(50px + 150 * (100vw / 1620));
-  }
-}
-
 .questions-whyWe__blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr auto/1fr 1fr;
   -webkit-column-gap: 50px;
           column-gap: 50px;
-  row-gap: 50px;
 }
 
 @media (max-width: 1100px) {
@@ -198,26 +187,29 @@
   }
 }
 
-.questions-whyWe__block {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+.questions-whyWe__blocks div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template: 1fr 1fr/1fr;
 }
 
-@media (max-width: 1100px) {
-  .questions-whyWe__block {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+@media (max-width: 767px) {
+  .questions-whyWe__blocks div {
+    margin-top: calc( 50px + 96.9 * ((100vw - 320px) / 1620));
   }
 }
 
-.questions-whyWe__block > p {
-  margin-bottom: 30px;
+@media (min-width: 767px) {
+  .questions-whyWe__blocks div {
+    margin-top: calc(50px + 57 * (100vw / 1620));
+  }
 }
 
 .questions-whyWe__question {
   line-height: 35px;
+  margin-bottom: 20px;
   color: #000000;
 }
 

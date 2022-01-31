@@ -1,6 +1,7 @@
 import "./button.css";
-import arrow from "../../../../img/arrow.png";
+import { ReactComponent as Arrow } from "../../../../img/arrowSvg.svg";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 const Button = (props) => {
   return (
     <NavLink
@@ -9,7 +10,7 @@ const Button = (props) => {
       style={props.align ? { margin: "0 auto" } : null}
     >
       Подробнее
-      <img src={arrow} alt="" />
+      <Arrow className="img" />
     </NavLink>
   );
 };

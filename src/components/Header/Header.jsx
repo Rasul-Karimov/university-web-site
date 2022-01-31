@@ -4,32 +4,61 @@ import map from "./../../img/map.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 function Header() {
   let [burgerMenu, setBurgerMenu] = useState(false);
-  const burgerActive = "active";
+  let [menuVisible, setmenuVisible] = useState(false);
+  let [menuVisible2, setmenuVisible2] = useState(false);
+
+  const burgerActive = "_active";
+  const menuActive = "_active";
+  const menuActive2 = "_active";
+
   function clickBurger() {
     setBurgerMenu(!burgerMenu);
+  }
+  function clickMenu() {
+    setmenuVisible(!menuVisible);
+  }
+  function clickMenu2() {
+    setmenuVisible2(!menuVisible2);
   }
   return (
     <div className={`header ${burgerMenu ? burgerActive : null}`}>
       <div className="container">
         <div className="header__block">
           <div className="header__logo">
-            <a href="">
+            <Link to="/">
               <img src={logo} alt="" />
-            </a>
+            </Link>
           </div>
           <nav className="header__menu menu">
             <ul className="menu__list">
-              <li className="menu__item">
+              <motion.li
+                className="menu__item"
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{}}
+              >
                 <NavLink to="/" className="menu__link">
                   Главная
                 </NavLink>
-              </li>
-              <li className="menu__item">
-                <a href="" className="menu__link">
+              </motion.li>
+              <motion.li
+                className="menu__item"
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.2,
+                }}
+              >
+                <Link
+                  onClick={clickMenu}
+                  to=""
+                  className={`menu__link ${menuVisible ? menuActive : null}`}
+                >
                   О нас
-                </a>
+                </Link>
                 <ul className="menu__sublist">
                   <li className="menu__subitem">
                     <Link to="/administration" className="menu__sublink">
@@ -44,18 +73,29 @@ function Header() {
                   <li className="menu__subitem">
                     <a
                       target="_blank"
-                      href="https://www.ksla.kg/ru/o-kgiua/social/"
+                      href="https://vokrug.kg/kgua-2.html"
                       className="menu__sublink"
                     >
                       Виртуальный тур
                     </a>
                   </li>
                 </ul>
-              </li>
-              <li className="menu__item">
-                <a href="" className="menu__link">
+              </motion.li>
+              <motion.li
+                className="menu__item"
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.4,
+                }}
+              >
+                <Link
+                  onClick={clickMenu2}
+                  to=""
+                  className={`menu__link ${menuVisible2 ? menuActive2 : null}`}
+                >
                   Поступающим
-                </a>
+                </Link>
                 <ul className="menu__sublist">
                   <li className="menu__subitem">
                     <Link to="/whywe" className="menu__sublink">
@@ -73,13 +113,30 @@ function Header() {
                     </Link>
                   </li>
                 </ul>
-              </li>
-              <li className="menu__item">
-                <NavLink to="/students" className="menu__link">
+              </motion.li>
+              <motion.li
+                className="menu__item"
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.6,
+                }}
+              >
+                <NavLink
+                  to="/students"
+                  className={`menu__link ${menuVisible ? menuActive : null}`}
+                >
                   Студентам
                 </NavLink>
-              </li>
-              <li className="menu__item">
+              </motion.li>
+              <motion.li
+                className="menu__item"
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                }}
+              >
                 <a
                   target="_blank"
                   href="http://avn.ksla.kg/"
@@ -87,12 +144,22 @@ function Header() {
                 >
                   Портал
                 </a>
-              </li>
-              <li className="menu__item">
-                <NavLink to="/contacts" className="menu__link">
+              </motion.li>
+              <motion.li
+                className="menu__item"
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 1,
+                }}
+              >
+                <NavLink
+                  to="/contacts"
+                  className={`menu__link ${menuVisible ? menuActive : null}`}
+                >
                   Контакты
                 </NavLink>
-              </li>
+              </motion.li>
             </ul>
           </nav>
           <div onClick={clickBurger} className="header__menu-btn">

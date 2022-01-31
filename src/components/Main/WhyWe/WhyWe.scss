@@ -97,35 +97,30 @@ $maxWidth: 1620;
 }
 
 .whyWe__questions {
+  @include adaptiv-value("margin-bottom", 150, 50);
 }
 
 .questions-whyWe {
   &__title {
-    @include adaptiv-value("margin-bottom", 150, 50);
   }
-  @include adaptiv-value("margin-bottom", 200, 50);
 
   &__blocks {
-    display: flex;
+    display: grid;
+    grid-template: 1fr auto/1fr 1fr;
     column-gap: 50px;
-    row-gap: 50px;
     @media (max-width: 1100px) {
       flex-wrap: wrap;
     }
-  }
-  &__block {
-    flex: 0 0 50%;
-    @media (max-width: 1100px) {
-      flex: 0 0 100%;
-    }
-    & > p {
-      margin-bottom: 30px;
+    div {
+      display: grid;
+      grid-template: 1fr 1fr/1fr;
+      @include adaptiv-value("margin-top", 107, 50);
     }
   }
   &__question {
     @include adaptiv-value("font-size", 30, 16);
     line-height: 35px;
-
+    margin-bottom: 20px;
     color: #000000;
   }
   &__answer {

@@ -19,10 +19,12 @@ const WhyWe = () => {
                   <span> Вышная IT-школа </span>предоставляет возможности
                 </li>
                 <li>
-                  <span> Вышная IT-школа </span>дает фундаментальные знания
+                  <span> Вышная IT-школа </span>самые высококвалифицированные
+                  преподаватели
                 </li>
                 <li>
-                  <span> Вышная IT-школа </span>дает фундаментальные знания
+                  <span> Вышная IT-школа </span> дает возможность обучиться и
+                  юридическим предметам
                 </li>
               </ul>
             </div>
@@ -34,13 +36,14 @@ const WhyWe = () => {
             <div className="item-whyWe__content">
               <ul>
                 <li>
-                  <span> Вышная IT-школа </span>предоставляет возможности
+                  <span> Вышная IT-школа </span>дает знания на востребованную
+                  профессию
                 </li>
                 <li>
-                  <span> Вышная IT-школа </span>дает фундаментальные знания
+                  <span> Вышная IT-школа </span>имеет отличную инфраструктуру
                 </li>
                 <li>
-                  <span> Вышная IT-школа </span>дает фундаментальные знания
+                  <span> Вышная IT-школа </span>учит правильно ставить цел и
                 </li>
               </ul>
             </div>
@@ -57,11 +60,16 @@ const WhyWe = () => {
             Часто задаваемые вопросы
           </h3>
           <div className="questions-whyWe__blocks">
-            <div className="questions-whyWe__block">
+            <div>
               <p className="questions-whyWe__question">
-                Можно ли подать документы по почте?
+                Какой пороговый балл при поступлении?
               </p>
-              <p className="questions-whyWe__answer">Нет</p>
+              <p className="questions-whyWe__answer">
+                Пороговый балл для поступления в IT школу определяет
+                Министерство образования КР
+              </p>
+            </div>
+            <div>
               <p className="questions-whyWe__question">
                 Какие документ необходимо при поступлении?
               </p>
@@ -73,19 +81,22 @@ const WhyWe = () => {
                 3x4
               </p>
             </div>
-            <div className="questions-whyWe__block">
+            <div>
               <p className="questions-whyWe__question">
                 Возможно ли выбрать заочную форму обучения?
               </p>
-              <p className="questions-whyWe__answer">Нет</p>
-              <p className="questions-whyWe__question">
-                Проводятся ли ступительные экзамены в вашем коллледже?
+              <p className="questions-whyWe__answer">
+                Нет, только очная форма обучения
               </p>
-              <p className="questions-whyWe__answer">Нет, не проводятся</p>
+            </div>
+            <div>
               <p className="questions-whyWe__question">
-                Как узнать поступил(а) я или нет?
+                куда и когда приносить документы?
               </p>
-              <p className="questions-whyWe__answer">Не важно</p>
+              <p className="questions-whyWe__answer">
+                понедельник - суббота – с 8.30 до 17:00 часов; Адрес: Бишкек,
+                пр. Чуй 180А (“Юридическая академия”)
+              </p>
             </div>
           </div>
         </div>

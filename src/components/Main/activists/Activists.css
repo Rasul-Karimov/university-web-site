@@ -111,6 +111,14 @@
   }
 }
 
+@media (max-width: 500px) {
+  .team-activists__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .team-activists__title {
   text-align: center;
   position: relative;

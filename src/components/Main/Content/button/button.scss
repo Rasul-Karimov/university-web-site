@@ -6,21 +6,30 @@
   font-size: 14px;
   line-height: 22px;
   color: white;
-  width: 51px;
-  height: 57.92px;
   text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   transition: all ease 300ms 0s;
+  box-shadow: 5px 5px 15px #0054a5;
   &:hover {
-    background-color: #00305e;
+    box-shadow: 2px 2px 2px #0054a5;
   }
-  img {
+  &:hover {
+    .img * {
+      fill: blue;
+    }
+  }
+  .img {
     position: absolute;
     top: 18px;
-    left: 170px;
+    left: 160px;
     padding-left: 10px;
+    width: 40px;
+    height: 20px;
+    & * {
+      transition: all ease 300ms 0s;
+    }
   }
 }

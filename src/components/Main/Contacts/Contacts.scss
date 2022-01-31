@@ -78,3 +78,20 @@ $maxWidth: 1620;
   }
   margin-bottom: 58px;
 }
+.icon-contacts * {
+  transition: all ease 300ms 0s;
+}
+.icon-contacts:hover {
+  & * {
+    fill: #59b4fa;
+  }
+}
+iframe {
+  width: 100%;
+  @media (max-width: 1000px) {
+    height: 500px;
+  }
+  @media (max-width: 680px) {
+    height: 350px;
+  }
+}

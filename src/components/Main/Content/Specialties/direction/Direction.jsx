@@ -1,6 +1,8 @@
 import "./direction.css";
-import arrow from "../../../../../img/arrow.png";
+import { ReactComponent as Arrow } from "../../../../../img/arrowSvg.svg";
 import { NavLink } from "react-router-dom";
+import Buttons from "../../../Buttons/Buttons";
+
 const Direction = (props) => {
   return (
     <div className="specialties__items item-specialties">
@@ -16,10 +18,12 @@ const Direction = (props) => {
           );
         })}
       </ul>
-      <NavLink to={props.to} className="item-specialties__button-link">
-        Подробнее
-        <img src={arrow} alt="" />
-      </NavLink>
+      <Buttons
+        to={props.to}
+        title="подробнее"
+        arrow={true}
+        class="item-specialties__button-link"
+      />
     </div>
   );
 };

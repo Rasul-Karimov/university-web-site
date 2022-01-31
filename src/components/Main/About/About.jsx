@@ -4,8 +4,13 @@ import about2 from "../../../img/about1.png";
 import about1 from "../../../img/about2.png";
 import background from "../../../img/background.png";
 import ItemSpecialties from "./ItemSepcialties/ItemSpecialties";
+import { useEffect } from "react";
+import Buttons from "../Buttons/Buttons";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="about">
       <div className="about__container">
@@ -90,6 +95,7 @@ const About = () => {
             духе строгого соблюдения закона и уважения к государственным
             символам.
           </p>
+          <Buttons />
         </div>
       </div>
     </div>

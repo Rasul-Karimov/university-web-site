@@ -14,7 +14,10 @@ $maxWidth: 1620;
 
 .item-specialties {
   background: #eaf3fa;
-  padding: 20px 65px;
+  padding: 20px 0 20px 0;
+  @include adaptiv-value("padding-right", 65, 30);
+  @include adaptiv-value("padding-left", 65, 30);
+
   max-width: 422px;
   display: flex;
   flex-direction: column;
@@ -41,25 +44,7 @@ $maxWidth: 1620;
   }
 
   &__button-link {
-    width: 192px;
+    width: 222px;
     height: 44.31px;
-    background: #0054a5;
-    border: 1.52988px solid #0054a5;
-    box-sizing: border-box;
-    border-radius: 29.8327px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 5px 3px 15px #0054a5;
-    color: white;
-    font-size: 10.7092px;
-    line-height: 17px;
-    padding-left: 30px;
-    padding-right: 20px;
-    transition: all ease 300ms 0s;
-    transition: all ease 300ms 0s;
-    &:hover {
-      background-color: #00386d;
-    }
   }
 }

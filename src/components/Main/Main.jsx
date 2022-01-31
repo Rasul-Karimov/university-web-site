@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./main.css";
 import Department from "./More/Department/Department";
 import Content from "./Content/Content";
@@ -10,8 +10,6 @@ import Whywe from "./WhyWe/WhyWe";
 import Activists from "./activists/Activists";
 import Contacts from "./Contacts/Contacts";
 import Header from "../Header/Header";
-import { NewsProvider } from "./NewsContext/NewsContext";
-
 import img1 from "../../img/Новости/img1.png";
 import img2 from "../../img/Новости/img2.png";
 import img3 from "../../img/Новости/img3.png";
@@ -26,33 +24,146 @@ import img11 from "../../img/Новости/img11.png";
 import img12 from "../../img/Новости/img12.png";
 import img13 from "../../img/Новости/img13.png";
 import img14 from "../../img/Новости/img14.png";
-import NewMore from "./NewMore/NewMore";
-
+import NewMore from "./NewMore";
+import { NewsContext } from "./NewsContext";
+import { useContext } from "react";
+import { NewsProvider } from "./NewsContext";
 function Main() {
+  const newsPage = useContext(NewsContext);
+
   return (
-    <NewsProvider>
-      <Routes>
-        <Route path="/" element={<Content />} />
-        <Route path="/department" element={<Department />} />
-        <Route path="/collage" element={<Collage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/news" element={<NewsSection />} />
-        <Route path="/administration" element={<Administration />} />
-        <Route path="/students" element={<Activists />} />
-        <Route path="/whywe" element={<Whywe />} />
-        <Route path="/contacts" element={<Contacts />} />
-        <Route
-          path="/news1"
-          element={
-            <NewMore
-              title="Hello"
-              text="   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolores voluptates, atque non, porro inventore possimus incidunt deserunt provident doloribus ratione sequi? In assumenda ea aut tempore error molestiae voluptates!"
-              img={img1}
-            />
-          }
-        />
-      </Routes>
-    </NewsProvider>
+    <Routes>
+      <Route path="/" element={<Content />} />
+      <Route path="/department" element={<Department />} />
+      <Route path="/collage" element={<Collage />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/news" element={<NewsSection />} />
+      <Route path="/administration" element={<Administration />} />
+      <Route path="/students" element={<Activists />} />
+      <Route path="/whywe" element={<Whywe />} />
+      <Route path="/contacts" element={<Contacts />} />
+
+      <Route
+        path={newsPage[0].href}
+        element={
+          <NewMore
+            title={newsPage[0].title}
+            text={newsPage[0].text2}
+            img={img1}
+          />
+        }
+      />
+      <Route
+        path={newsPage[1].href}
+        element={
+          <NewMore
+            title={newsPage[1].title}
+            text={newsPage[1].text2}
+            img={img2}
+          />
+        }
+      />
+      <Route
+        path={newsPage[2].href}
+        element={
+          <NewMore
+            title={newsPage[2].title}
+            text={newsPage[2].text2}
+            img={img3}
+          />
+        }
+      />
+      <Route
+        path={newsPage[3].href}
+        element={
+          <NewMore
+            title={newsPage[3].title}
+            text={newsPage[3].text2}
+            img={img5}
+          />
+        }
+      />
+      <Route
+        path={newsPage[4].href}
+        element={
+          <NewMore
+            title={newsPage[4].title}
+            text={newsPage[4].text2}
+            img={img6}
+          />
+        }
+      />
+      <Route
+        path={newsPage[5].href}
+        element={
+          <NewMore
+            title={newsPage[5].title}
+            text={newsPage[5].text2}
+            img={img7}
+          />
+        }
+      />
+      <Route
+        path={newsPage[6].href}
+        element={
+          <NewMore
+            title={newsPage[6].title}
+            text={newsPage[6].text2}
+            img={img8}
+          />
+        }
+      />
+      <Route
+        path={newsPage[7].href}
+        element={
+          <NewMore
+            title={newsPage[7].title}
+            text={newsPage[7].text2}
+            img={img9}
+          />
+        }
+      />
+      <Route
+        path={newsPage[8].href}
+        element={
+          <NewMore
+            title={newsPage[8].title}
+            text={newsPage[8].text2}
+            img={img10}
+          />
+        }
+      />
+      <Route
+        path={newsPage[9].href}
+        element={
+          <NewMore
+            title={newsPage[9].title}
+            text={newsPage[9].text2}
+            img={img12}
+          />
+        }
+      />
+      <Route
+        path={newsPage[10].href}
+        element={
+          <NewMore
+            title={newsPage[10].title}
+            text={newsPage[10].text2}
+            img={img13}
+          />
+        }
+      />
+      <Route
+        path={newsPage[11].href}
+        element={
+          <NewMore
+            title={newsPage[11].title}
+            text={newsPage[11].text2}
+            img={img14}
+          />
+        }
+      />
+    </Routes>
   );
 }
 

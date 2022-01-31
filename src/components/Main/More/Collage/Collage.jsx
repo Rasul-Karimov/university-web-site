@@ -2,7 +2,11 @@ import "./Collage.css";
 import React from "react";
 import Mheader from "../MoreHeader/Mheader";
 import MoreContent from "./CollageContent/CollageContent";
+import { useEffect } from "react";
 const Collage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="department">
       <Mheader
