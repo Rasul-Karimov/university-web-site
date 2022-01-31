@@ -13,7 +13,7 @@ const Welcome = () => {
         <div className="welcome__block">
           <div className="welcome__content">
             <h2 className="welcome__title">
-              Добро Пожаловать, в Высшую IT Щколу!
+              Добро Пожаловать, в Высшую IT Школу!
             </h2>
             <p className="welcome__text">
               В Департаменте Цифровых Технологии вы можете изучать темы, которые
