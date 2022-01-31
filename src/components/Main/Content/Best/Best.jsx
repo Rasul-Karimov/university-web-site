@@ -86,7 +86,7 @@ const Best = () => {
                   <div className="best__img">
                     <img src={activist5} alt="" />
                   </div>
-                  <p className="title">Сыймык</p>
+                  <p className="title">Данияр</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -94,7 +94,23 @@ const Best = () => {
                   <div className="best__img">
                     <img src={activist6} alt="" />
                   </div>
-                  <p className="title">Эльдар</p>
+                  <p className="title">Сыймык</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="best__item">
+                  <div className="best__img">
+                    <img src={activist9} alt="" />
+                  </div>
+                  <p className="title">Расулбек</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="best__item">
+                  <div className="best__img">
+                    <img src={activist10} alt="" />
+                  </div>
+                  <p className="title">Асылбек</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -102,7 +118,15 @@ const Best = () => {
                   <div className="best__img">
                     <img src={activist7} alt="" />
                   </div>
-                  <p className="title">Расулбек</p>
+                  <p className="title">Айполчон</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="best__item">
+                  <div className="best__img">
+                    <img src={activist8} alt="" />
+                  </div>
+                  <p className="title">Эльдар</p>
                 </div>
               </SwiperSlide>
             </Swiper>
