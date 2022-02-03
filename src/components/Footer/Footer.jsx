@@ -134,10 +134,7 @@ function Footer() {
               >
                 <Whatsapp className="icon-footer footer-whatsapp" />
               </a>
-              <a
-                href="https://api.whatsapp.com/send/?phone=996700406730"
-                target="_blank"
-              >
+              <a href="https://vm.tiktok.com/ZSe2VsJP6/" target="_blank">
                 <TicToc className="icon-footer" />
               </a>
             </div>
