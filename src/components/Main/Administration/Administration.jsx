@@ -4,6 +4,8 @@ import director from "../../../img/director.png";
 import teacher1 from "../../../img/teacher1.png";
 import teacher2 from "../../../img/teacher2.png";
 import teacher3 from "../../../img/teacher3.png";
+import teacher4 from "../../../img/teacher4.jpeg";
+
 import fon from "../../../img/Departfon.png";
 import Admin from "./Admin/Admin";
 import { useEffect } from "react";
@@ -51,6 +53,11 @@ const Administration = () => {
             who="Ведущий специалист IT- Колледжа"
             name="Омуркулова Саламат Омуркуловна"
             image={teacher3}
+          />
+          <Admin
+            who="Заместитель директора по воспитательной работе"
+            name="Алмазбеков Бекзат Алмазбекович"
+            image={teacher4}
           />
         </div>
       </div>
