@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/university-web-site/static/css/main.d4774afd.css",
-    "main.js": "/university-web-site/static/js/main.3d41664c.js",
+    "main.js": "/university-web-site/static/js/main.284e18d0.js",
     "static/media/practice.jpg": "/university-web-site/static/media/practice.f0af6ae28e65db2283a0.jpg",
     "static/media/director.png": "/university-web-site/static/media/director.9f78b5a1a2a431f7b778.png",
     "static/media/teacher2.png": "/university-web-site/static/media/teacher2.cb6bf32a6f06445ba39a.png",
@@ -59,10 +59,10 @@
     "static/media/arrowSvg.svg": "/university-web-site/static/media/arrowSvg.0ea1cc8d4ad26ccd0424c296546334a1.svg",
     "index.html": "/university-web-site/index.html",
     "main.d4774afd.css.map": "/university-web-site/static/css/main.d4774afd.css.map",
-    "main.3d41664c.js.map": "/university-web-site/static/js/main.3d41664c.js.map"
+    "main.284e18d0.js.map": "/university-web-site/static/js/main.284e18d0.js.map"
   },
   "entrypoints": [
     "static/css/main.d4774afd.css",
-    "static/js/main.3d41664c.js"
+    "static/js/main.284e18d0.js"
   ]
 }
