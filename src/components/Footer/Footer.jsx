@@ -147,6 +147,9 @@ function Footer() {
             <div className="form-footer__input-tel">
               <input type="tel" placeholder="Телефон" />
             </div>
+            <div className="form-footer__input-tel">
+              <input type="textarea" placeholder="Вопрос" />
+            </div>
             <button className="form-footer__btn" type="submit">
               Отправить
             </button>

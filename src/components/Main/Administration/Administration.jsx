@@ -4,7 +4,7 @@ import director from "../../../img/director.png";
 import teacher1 from "../../../img/teacher1.png";
 import teacher2 from "../../../img/teacher2.png";
 import teacher3 from "../../../img/teacher3.png";
-import teacher4 from "../../../img/teacher4.jpeg";
+import teacher4 from "../../../img/teacher4.png";
 
 import fon from "../../../img/Departfon.png";
 import Admin from "./Admin/Admin";
@@ -47,17 +47,17 @@ const Administration = () => {
           <Admin
             who="Ведущий специалист"
             name="Сыргак кызы Айзат"
-            image={teacher2}
+            image={teacher3}
           />
           <Admin
             who="Ведущий специалист IT- Колледжа"
             name="Омуркулова Саламат Омуркуловна"
-            image={teacher3}
+            image={teacher4}
           />
           <Admin
             who="Заместитель директора по воспитательной работе"
             name="Алмазбеков Бекзат Алмазбекович"
-            image={teacher4}
+            image={teacher2}
           />
         </div>
       </div>

@@ -138,7 +138,7 @@ const Activists = () => {
             <Active
               img={activist16}
               name="Ирсалиева Айыма"
-              motto="студент 2 курса"
+              motto="студентка 2 курса"
             />
             <Active
               img={activist17}
